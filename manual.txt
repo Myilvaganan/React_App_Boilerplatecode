@@ -1,8 +1,6 @@
 npm init
 npm i react react-dom
 npm i --save-dev webpack webpack-dev-server webpack-cli
-npm i --save-dev babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin
-
 npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 
 *********Configuration**************
@@ -50,16 +48,18 @@ In // .babelrc
 }
 
 ************Script Changes in Package.json********
-// package.json
+In // package.json
 
 scripts: {
   "start": "webpack-dev-server --mode development --open --hot",
   "build": "webpack --mode production"
 }
 
-************Modify in index_bundle.html in dist folder**
+*****Modify in index_bundle.html in dist folder*****
+
 In // in index.html in dist folder after build
 
+Add
 
 <script type="text/javascript" src="index_bundle.js"></script>
 
