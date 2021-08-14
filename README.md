@@ -14,4 +14,4 @@
 5. Add <script src="index_bundle.js" type="text/javascript"></script> in index.html in dist folder
 
 
-**************************REFER manual.txt for step by step procedure*****************************
+**************************REFER manual.txt for step by step procedure*
