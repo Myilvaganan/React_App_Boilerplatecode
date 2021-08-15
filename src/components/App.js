@@ -5,11 +5,19 @@ const App = () => {
   return (
     <div className='App'>
       <img src={Logo} alt='Logo' />
-      Hi, Welcome To React App
-      <button>Hello</button>{' '}
+      <h2>Hi, Welcome To React App</h2>
+      <button
+        onClick={(e) =>
+          alert(
+            'Welcome! https://github.com/Myilvaganan/React_App_Boilerplatecode'
+          )
+        }
+      >
+        Hello
+      </button>{' '}
       <div>
         <blockquote>
-          <em>By Myilvaganan</em>
+          <i>By Myilvaganan</i>
         </blockquote>
       </div>
     </div>
