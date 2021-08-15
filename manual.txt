@@ -64,3 +64,43 @@ Add
 <script type="text/javascript" src="index_bundle.js"></script>
 
 
+===============================================================
+
+To include Scss/Sass in webpack
+
+npm i sass-loader node-sass webpack --save-dev
+
+npm i style-loader css-loader --save-dev
+
+
+Add rules in webpack
+
+ rules: [{
+        test: /\.scss$/,
+          use: [{
+            loader: "style-loader"
+          }, {
+            loader: "css-loader" 
+          }, {
+            loader: "sass-loader"
+          }]
+    }]
+
+Then Import file in required components / index.js
+
+To import other scss files 
+@import 'buttons';
+@import 'modal';
+
+===========================================
+
+To add Images
+
+{
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: 'url-loader',
+        },
+},
+
+=============================================

@@ -1,13 +1,17 @@
 import React from 'react';
+import Logo from '../assets/My_Logo.png';
 
 const App = () => {
   return (
-    <div>
-      Hi, This is a React App set-up using webpack and babel without using
-      create-react-app.
-      <blockquote>
-        <em>By Myilvaganan</em>
-      </blockquote>
+    <div className='App'>
+      <img src={Logo} alt='Logo' />
+      Hi, Welcome To React App
+      <button>Hello</button>{' '}
+      <div>
+        <blockquote>
+          <em>By Myilvaganan</em>
+        </blockquote>
+      </div>
     </div>
   );
 };

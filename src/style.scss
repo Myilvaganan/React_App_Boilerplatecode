@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$body-color: rgb(125, 5, 136);
+$font: 'Roboto', sans-serif;
+$primary-color: white;
+$dark-color: black;
+
+@mixin centerEle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin buttonStyle {
+  padding: 8px 10px !important;
+  color: $primary-color;
+  background-color: $dark-color;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-color;
+  min-height: 100vh;
+  font-family: $font;
+  @include centerEle();
+}
+
+button {
+  @include buttonStyle();
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+div {
+  color: $primary-color;
+  width: 100vw;
+  max-height: 100vh;
+  flex-direction: column;
+  transition: all 4s ease-out;
+  @include centerEle();
+}
+
+.App > * {
+  margin: 10px 0;
+}
+
+img {
+  height: 100px;
+  width: 80px;
+  animation: spin 15s linear 0s infinite reverse;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(360deg);
+  }
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
